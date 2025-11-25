@@ -1,4 +1,4 @@
-mod functions;
+pub mod functions;
 
 pub type GLenum = u32;
 pub type GLuint = u32;
@@ -34,16 +34,5 @@ impl GLerror {
             gl::STACK_OVERFLOW => GLerror::GlStackOverflow,
             other => GLerror::GlUnknown(other),
         }
-    }
-}
-
-#[cfg(test)]
-mod tests {
-    
-
-    #[test]
-    fn testing() {
-
-        assert_eq!(result, 4);
     }
 }
