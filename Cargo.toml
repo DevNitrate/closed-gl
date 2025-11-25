@@ -1,0 +1,11 @@
+[package]
+name = "closed-gl"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "a safe OpenGl wrapper that keeps the C syntax"
+repository = "https://github/com/devnitrate/closed-gl"
+readme = "README.md"
+
+[dependencies]
+gl = "0.14.0"
