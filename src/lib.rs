@@ -3,7 +3,6 @@ pub mod constants;
 
 pub type GLenum = u32;
 pub type GLuint = u32;
-pub type GLbuffer = u32;
 pub type GLuint64 = u64;
 pub type GLsizei = i32;
 pub type GLint = i32;
@@ -12,6 +11,7 @@ pub type GLsizeiptr = isize;
 pub type GLintptr = isize;
 pub type GLbitfield = u32;
 
+#[derive(Debug)]
 pub enum GLerror {
     GlNoError,
     GlInvalidEnum,
