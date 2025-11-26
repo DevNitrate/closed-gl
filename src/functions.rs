@@ -69,7 +69,7 @@ pub fn gl_dispatch_compute(num_groups_x: GLuint, num_groups_y: GLuint, num_group
     unsafe { gl::DispatchCompute(num_groups_x, num_groups_y, num_groups_z) };
 }
 
-pub fn gl_gen_buffers<T>(n: GLsizei, buffers: &mut [GLuint]) {
+pub fn gl_gen_buffers(n: GLsizei, buffers: &mut [GLuint]) {
     unsafe { gl::GenBuffers(n, buffers.as_mut_ptr()); }
 }
 
